@@ -15,7 +15,7 @@ a = int(input(f'\n{task2}\nВведіть А: '))
 b = int(input('Введіть B: '))
 c = int(input('Введіть C: '))
 
-if a > 10 and b > 10 and c > 10:
+if a and b and c > 10:
     if a % 3 == 0 and b % 3 == 0:
         print('\nyes')
     else:
