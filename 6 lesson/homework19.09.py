@@ -60,8 +60,4 @@ while N > i:
     j -= 1
     i += 1
     print(' ' * j + star * i)
-
-
-
-
-
+    
