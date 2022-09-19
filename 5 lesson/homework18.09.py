@@ -37,8 +37,6 @@ if a >= b and a >= c:
 elif b >= a and b >= c:
     MAX = b
     print(f'\nНайбільше число: {MAX}')
-elif c >= a and c >= b:
+else:
     MAX = c
     print(f'\nНайбільше число: {MAX}')
-else:
-    print('Всі числа однакові')
