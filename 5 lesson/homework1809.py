@@ -5,13 +5,14 @@ task1 = ''' 1. Пользователь с клавиатуры вводит т�
 
 number = int(input(f'{task1}\nВведіть тризначне число: '))
 
-if number < 0:
-    number = number * -1
-hundreds = number % 10 * 100
-tenths = number // 10 % 10 * 10
-digit = number // 100 % 10
-reversed_number = hundreds + tenths + digit
-print(f'\nНове число: {reversed_number}')
+if 100 <= number:
+    hundreds = number % 10 * 100
+    tenths = number // 10 % 10 * 10
+    digit = number // 100 % 10
+    reversed_number = hundreds + tenths + digit
+    print(f'\nНове число: {reversed_number}')
+else:
+    print('\nНекорректне значення. Введіть трьохзначне число')
 
 
 task2 = '''2. Пользователь вводит с клавиатуры три числа в переменные a, b, c.
