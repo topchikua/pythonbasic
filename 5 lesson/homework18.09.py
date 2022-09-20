@@ -36,7 +36,7 @@ c = float(input('Введіть C: '))
 if a >= b and a >= c:
     MAX = a
     print(f'\nНайбільше число: {MAX}')
-elif b >= a and b >= c:
+elif b >= c:
     MAX = b
     print(f'\nНайбільше число: {MAX}')
 else:
