@@ -4,7 +4,11 @@ task1 = ''' 1. Пользователь с клавиатуры вводит т�
 преобразование типов данных только при получении числа из функции input.'''
 
 number = int(input(f'{task1}\nВведіть тризначне число: '))
-reversed_number = number % 10 * 100 + number // 10 % 10 * 10 + number // 100 % 10
+
+hundreds = number % 10 * 100
+tenths = number // 10 % 10 * 10
+digit = number // 100 % 10
+reversed_number = hundreds + tenths + digit
 print(f'\nНове число: {reversed_number}')
 
 
@@ -14,14 +18,13 @@ task2 = '''2. Пользователь вводит с клавиатуры тр
 a = int(input(f'\n{task2}\nВведіть А: '))
 b = int(input('Введіть B: '))
 c = int(input('Введіть C: '))
+condition1 = bool(a > 10 and b > 10 and c > 10)
+condition2 = bool(a % 3 == 0 and b % 3 == 0)
 
-if a > 10 and b > 10 and c > 10:
-    if a % 3 == 0 and b % 3 == 0:
-        print('\nyes')
-    else:
-        print('\nno')
+if condition1 is True and condition2 is True:
+    print('\nYes')
 else:
-    print('\nno')
+    print('\nNo')
 
 
 task3 = '''3. Пользователь вводит с клавиатуры три числа в переменные a, b, c. 
