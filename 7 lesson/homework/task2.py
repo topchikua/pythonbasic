@@ -16,4 +16,4 @@
 j = 0
 for i in range(3, 31, 3):
     j += 1
-    print('3*' + str(j) + '=' + str(i))
+    print(f'3*{j}={i}')
