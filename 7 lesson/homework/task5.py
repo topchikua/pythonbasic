@@ -20,8 +20,6 @@ for letter in message:
         encrypt_message += chr(ord('A') + (ord(letter) - ord('A') + shift) % 26)
     elif 97 <= ord(letter) <= 122 and letter.islower():
         encrypt_message += chr(ord('a') + (ord(letter) - ord('a') + shift) % 26)
-    else:
-        encrypt_message = '\nДругие языки еще в разработке'
 print(f'\nЗашифрованное сообщение: {encrypt_message}')
 
 
