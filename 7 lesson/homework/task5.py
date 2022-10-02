@@ -8,11 +8,21 @@
 """
 
 
-message = input('Введите ваше сообщение: ')
+message = input('Введите ваше сообщение на ru/ EN языке: ')
 shift = int(input('Шифруем со сдвигом вправо: '))
 encrypt_message = ''
 for letter in message:
-    encrypt_message += chr(ord(letter) + shift)
+    if 1040 <= ord(letter) <= 1072 and letter.isupper():
+        encrypt_message += chr(ord('А') + (ord(letter) - ord('А') + shift) % 32)
+    elif 1072 <= ord(letter) <= 1103 and letter.islower():
+        encrypt_message += chr(ord('а') + (ord(letter) - ord('а') + shift) % 32)
+    elif 65 <= ord(letter) <= 90 and letter.isupper():
+        encrypt_message += chr(ord('A') + (ord(letter) - ord('A') + shift) % 26)
+    elif 97 <= ord(letter) <= 122 and letter.islower():
+        encrypt_message += chr(ord('a') + (ord(letter) - ord('a') + shift) % 26)
+    else:
+        encrypt_message = '\nДругие языки еще в разработке'
 print(f'\nЗашифрованное сообщение: {encrypt_message}')
+
 
 
