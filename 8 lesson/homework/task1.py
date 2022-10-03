@@ -3,24 +3,20 @@
 Если это так, то вывести 'YES', иначе 'NO'
 """
 
-test_string = 'sndsjd(((    4848484J'
-symbol_space = False
-symbol_lower = False
-symbol_upper = False
-symbol_digit = False
+test_string = 'Hello World1'
+symbol_detail = [False, False, False, False]
 for symbol in test_string:
     if symbol.isspace():
-        symbol_space = True
+        symbol_detail[0] = True
     elif symbol.islower():
-        symbol_lower = True
+        symbol_detail[1] = True
     elif symbol.isupper():
-        symbol_upper = True
+        symbol_detail[2] = True
     elif symbol.isdigit():
-        symbol_digit = True
+        symbol_detail[3] = True
     else:
         ...
-if symbol_space is True and symbol_lower is True and symbol_upper is True \
-        and symbol_digit is True:
+if symbol_detail.count(True) == 4:
     print('\nYES')
 else:
     print('\nNO')
