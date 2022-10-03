@@ -39,6 +39,4 @@ elif pass_detail.count(True) == 1:
     pass_complexity = 2
 else:
     pass_complexity = 'Error'
-print(pass_detail)
-print(pass_detail.count(True))
 print(f'\nНадежность вашего пароля: {pass_complexity}')
