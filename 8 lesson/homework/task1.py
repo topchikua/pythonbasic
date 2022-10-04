@@ -14,9 +14,7 @@ for symbol in test_string:
         symbol_detail[2] = True
     elif symbol.isdigit():
         symbol_detail[3] = True
-    else:
-        ...
-if symbol_detail.count(True) == 4:
+if all(symbol_detail):
     print('\nYES')
 else:
     print('\nNO')
