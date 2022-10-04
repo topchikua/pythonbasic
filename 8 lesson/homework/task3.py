@@ -29,7 +29,7 @@ for symbol in password:
         ...
 if pass_wrong.count(password) > 0:
     pass_complexity = 1
-elif symbol_count and pass_detail.count(True) == 4:
+elif symbol_count and all(pass_detail):
     pass_complexity = 5
 elif pass_detail.count(True) >= 3:
     pass_complexity = 4
