@@ -10,4 +10,4 @@ for i in range(count):
     numbers = float(input(f'Enter number #{i + 1}: '))
     num_list.append(numbers)
 N = float(input('\nEnter N: '))
-print(f'In List: {num_list}\n{num_list.count(N)} coincidences')
+print(f'\n{num_list.count(N)} - coincidences')
