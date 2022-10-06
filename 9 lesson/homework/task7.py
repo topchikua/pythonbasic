@@ -5,14 +5,10 @@
 Количество цифр: 3
 """
 
-digit_count = 0
 digit_list = []
-text = input('\nEnter the random text:\n')
+text = input('\nВведите случайный текст:\n')
 for i in range(len(text)):
     if text[i].isdigit():
         digit_list.append(int(text[i]))
-print(digit_list)
-for j
-
-
-
+digit_set = set(digit_list)
+print(f'\nКоличество цифр: {len(digit_set)}')
