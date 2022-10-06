@@ -3,16 +3,6 @@
 Записать все числа из списка A которые больше 5 в список C
 """
 
-# count = 5
-# A = []
-# C = []
-# for i in range(count):
-#     number = float(input(f'Enter Number #{i+1}: '))
-#     A.append(number)
-#     if number > 5:
-#         C.append(number)
-# print(f'\nA: {A}\nC: {C}')
-
 count = 5
 A = []
 C = []
