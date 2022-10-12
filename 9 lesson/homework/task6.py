@@ -13,7 +13,7 @@ if N != 0:
     for i in range(N):
         while True:
             number = input(f'Enter number #{i+1}: ')
-            if number.isdigit():
+            if number.isdigit() or (number[0] == "-" and number[1:].isdigit()):
                 A.append(int(number))
                 break
             else:
