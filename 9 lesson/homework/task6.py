@@ -19,6 +19,7 @@ if N != 0:
             else:
                 print('Wrong number')
     min_value = A[0]
+    max_value = A[0]
     for j in A:
         if j > max_value:
             max_value = j
