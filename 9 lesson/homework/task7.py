@@ -6,9 +6,10 @@
 """
 
 digit_list = []
+digit_count = 0
 text = input('\nВведите случайный текст:\n')
 for i in range(len(text)):
     if text[i].isdigit():
         digit_list.append(int(text[i]))
-digit_set = set(digit_list)
-print(f'\nКоличество цифр: {len(digit_set)}')
+digit_count = len(digit_list)
+print(f'\nКоличество цифр: {digit_count}')
