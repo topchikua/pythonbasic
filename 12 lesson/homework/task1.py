@@ -19,5 +19,3 @@ with open('users.txt', 'wb') as f:
     pickle.dump(users, f)
     f.write(pickle.dumps(users))
 print(f'Данные успешно записаны\nCериализованный объект: \n{pickle.dumps(users)}')
-
-
