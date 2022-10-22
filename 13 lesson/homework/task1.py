@@ -6,13 +6,10 @@ from random import randint
 """
 
 def change(lst):
-    first = lst[0]
-    last = lst[-1]
-    lst[-1] = first
-    lst[0] = last
+    lst[0], lst[-1] = lst[-1], lst[0]
     return lst
 
 lst = [randint(-10, 10) for i in range(randint(2, 7))]
 
-print(f'Исходный список:\n{lst}')
-print(f'Список после модификации:\n{change(lst)}')
+print(f'\nИсходный список:\n{lst}')
+print(f'\nСписок после модификации:\n{change(lst)}')
