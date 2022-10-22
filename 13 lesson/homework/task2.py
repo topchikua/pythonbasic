@@ -3,12 +3,12 @@
 Предполагается, что элементы списка будут соответствовать правилам задания ключей в словарях.
 """
 
+
 def to_dict(lst):
-    dict_lst = {value: value for value in lst}
-    return dict_lst
+    return {value: value for value in lst}
+
 
 lst = [-100, 'test1', '(123***)', 0]
 
 print(f'\nИсходный список:\n{lst}')
 print(f'\nСозданный словарь:\n{to_dict(lst)}')
-
