@@ -23,13 +23,18 @@ data = [
 ]
 
 pos = int(input('Enter position: '))
-name = input('Enter position: ')
+name = input('Enter name: ')
 
 
 def add_func(pos: int, name: str):
+    if pos > len(data) + 1:
+        pos = len(data) + 1
+        print(f'\nИндекс позиции замененен на максимально допустимый - {len(data) + 1} !!!')
+    elif pos <= 0:
+        pos = 1
+        print(f'\nИндекс позиции замененен на минимально допустимый - {pos} !!!')
     data.insert(pos - 1, {'name': name, 'position': pos})
     for i in range(pos, len(data)):
-        print(i)
         if pos <= data[i]['position']:
             data[i]['position'] += 1
     return data
