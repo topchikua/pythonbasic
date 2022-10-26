@@ -28,7 +28,7 @@ def replace_func(pos1: int, pos2: int, data: list):
         data[pos1-1]['name'], data[pos2-1]['name'] = data[pos2-1]['name'], data[pos1-1]['name']
         return data
     else:
-        print('Wrong positions')
+        print('\nWrong positions')
         return data
 
 
