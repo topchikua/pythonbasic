@@ -22,7 +22,7 @@ data = [
 pos = int(input('Enter position: '))
 
 
-def del_func(pos):
+def del_func(pos: int, data: list):
     for i in range(len(data)):
         if data[i]['position'] == pos:
             data.pop(i)
@@ -33,4 +33,4 @@ def del_func(pos):
     return data
 
 
-print(del_func(pos))
+print(del_func(pos, data))
