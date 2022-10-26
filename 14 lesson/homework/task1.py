@@ -29,6 +29,8 @@ def del_func(pos):
             for j in range(len(data)):
                 data[j]['position'] = j + 1
             return data
+    print('Wrong position!')
+    return data
 
 
 print(del_func(pos))
