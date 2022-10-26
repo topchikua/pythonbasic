@@ -32,7 +32,6 @@ def add_func(pos: int, name: str):
         print(i)
         if pos <= data[i]['position']:
             data[i]['position'] += 1
-            print('test')
     return data
 
 
